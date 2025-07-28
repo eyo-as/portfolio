@@ -2,12 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import forum from "../../Assets/Projects/forumEvangadi.png";
 import peerHub from "../../Assets/Projects/peerHub.png";
 import abeGarage from "../../Assets/Projects/abeGarage.png";
 
@@ -33,6 +28,7 @@ function Projects() {
               demoLink="https://peer-hub.vercel.app"
             />
           </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -47,7 +43,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={forum}
               isBlog={false}
               title="Evangadi Forum"
               description="Evangadi Forum is a full-stack question-and-answer platform tailored for aspiring developers and tech learners. Designed as a collaborative learning space, it allows users to post programming-related questions, receive peer answers, and build a shared technical knowledge base. The platform supports secure user authentication and provides a smooth interface for navigating discussions — making it ideal for coding communities and bootcamp cohorts."
