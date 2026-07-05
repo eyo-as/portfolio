@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import forum from "../../Assets/Projects/forumEvangadi.png";
 import peerHub from "../../Assets/Projects/peerHub.png";
 import abeGarage from "../../Assets/Projects/abeGarage.png";
+import libris from "../../Assets/Projects/libris.png";
 
 function Projects() {
   return (
@@ -20,6 +21,17 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={libris}
+              isBlog={false}
+              title="Libris"
+              description="A full stack web application where users can log books, track reading status (want to read, reading, completed) and manage their personal library. Built with React frontend, Node/Express REST API, MongoDB database, and JWT authentication. Deployed with Docker."
+              ghLink="https://github.com/eyo-as/Libris"
+              demoLink="https://libris-hub.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={peerHub}
               isBlog={false}
               title="Peer Hub"
@@ -28,7 +40,6 @@ function Projects() {
               demoLink="https://peer-hub.vercel.app"
             />
           </Col>
-          
 
           <Col md={4} className="project-card">
             <ProjectCard
